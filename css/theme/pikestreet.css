@@ -136,10 +136,10 @@ body > div > div.backgrounds > div.slide-background.present > video {
 .reveal div.two-columns ul {
   margin-bottom: 20px; }
 .reveal div.two-columns div.left {
-  width: 40%;
+  width: 50%;
   float: left; }
 .reveal div.two-columns div.right {
-  width: 60%;
+  width: 50%;
   float: right; }
 
 /*********************************************
