@@ -40,7 +40,6 @@
 	<body>
 
 		<div class="reveal pikestreet">
-
 			<div class="slides">
 				<section data-background="assets/patternbg.png" data-background-size="700px" data-background-repeat="repeat">
 					<div class="accent">
@@ -52,10 +51,6 @@
 						<small>Open Source Engineer, Microsoft</small><br />
 						@felixrieseberg
 					</p>
-
-					<aside class="notes">
-						Hi, I'm a Speaker Note. You can open the Speaker View by hitting [S] on your keyboard.
-					</aside>
 				</section>
 
 				<section data-background="assets/azure-bg.jpg" class="inverse">
@@ -64,11 +59,26 @@
 					<div class="github">
 						<img src="assets/github.png" class="noborder" />
 					</div>
+
+					<!-- Notes -->
+					<aside class="notes">
+						Who we are, what we do
+					</aside>
 				</section>
 
 				<section data-background="assets/azure-bg.jpg" class="inverse">
 					<img src="assets/vs.png" class="noborder vs" />
 					<h4>Free for indie developers, open source projects, academic research, education, and small professional teams</h4>
+
+					<!-- Notes -->
+					<aside class="notes">
+						<ol>
+							<li>Before we get started, I’d like to briefly mention that I’m not trying to sell Visual Studio to you</li>
+							<li>There’s a new edition of VS called VS Community, which is entirely free for all indie developers.</li>
+							<li>It’s also free for anybody working on Open Source projects, research, in a classroom, or in a company with less than five devs.</li>
+							<li>That being said, there are four things I’d like to cover today: Android Emulator for Visual Studio, C#, C++, JS</li>
+						</ol>
+					</aside>
 				</section>
 
 				<section data-background="assets/azure-bg.jpg" class="inverse">
@@ -81,6 +91,16 @@
 						</ul>
 					</div>
 					<img src="assets/emulator.png" class="noborder" />
+
+					<!-- Notes -->
+					<aside class="notes">
+						<ol>
+							<li>It’s cool that there are already a bunch of Android emulators out there, it’s just not great that the good ones are more expensive than full IDEs.</li> 
+							<li>In addition, we were missing a bunch of features – Hyper-V support for real fast emulation, drag and drop APK installs, proper OpenGL support, any many more.</li>
+							<li>The result is a powerful emulator Hyper-V-powered emulator that comes with Visual Studio, which is also hooked into the full debugging experience (breakpoints, step-through, etc.) across C++, C#, and JavaScript.</li>
+							<li>Mention iOS debugging experience (https://www.npmjs.com/package/vs-mda-remote)</li>
+						</ol>
+					</aside>
 				</section>
 
 				<section data-background="assets/patternbg2.png" data-background-size="700px" data-background-repeat="repeat">
@@ -91,10 +111,28 @@
 				<section class="inverse" data-background-color="rgb(92, 29, 146)">
 					<h2>Cross-Platform Strategies</h2>
 					<img class="noborder" id="slideshow" src="assets/richvsbreadth/1.png">
+
+					<!-- Notes -->
+					<aside class="notes">
+						<ol>
+							<li>The way we see it, there are two main approaches to development: You can either build a performant, rich experience by going native, or you can prioritize a breadth of devices (usually by making compromises)</li>
+							<li>Rich: Native with C#/C++. Extension: X-Plat C++, Xamarin</li>
+							<li>Breadth: Cordova. Extension: Better tooling.</li>
+						</ol>
+					</aside>
 				</section>
 
 				<section class="inverse" data-background="assets/alljoyn-bg.jpg">
 					<h1>C++</h1>
+
+					<!-- Notes -->
+					<aside class="notes">
+						<ol>
+							<li>Yesterday, somebody came up to me and basically asked "Why the hell" are you doing so much cross-platform stuff?"</li>
+							<li>The main reason we built powerful C++ tools for cross-platform development is that we needed it ourselfes</li>
+							<li>In order to port Office to Android and iOS tablets, we had to port a massive C++ code base over</li>
+						</ol>
+					</aside>
 				</section>
 
 				<section class="inverse" data-transition="slide-in fade-out">
@@ -161,6 +199,15 @@
 							<li>Angry Birds</li>
 						</ul>
 					</div>
+
+					<!-- Notes -->
+					<aside class="notes">
+						<ol>
+							<li>Before we go any further, I want to drive a point home. I'm not the biggest fan of C++. In fact, I think it's fair to say that it's far less convenient than Java, C#, JavaScript or any other way we build apps.</li>
+							<li>I also think it's the best way.</li>
+							<li>Those are the top 50 apps. How many of those, do you think, use C++?</li>
+						</ol>
+					</aside>
 				</section>
 
 				<section class="inverse" data-transition="fade-in fade-out">
@@ -227,6 +274,13 @@
 							<li>Angry Birds</li>
 						</ul>
 					</div>
+
+					<!-- Notes -->
+					<aside class="notes">
+						<ol>
+							<li>80% percent!</li>
+						</ol>
+					</aside>
 				</section>
 
 				<section data-background="assets/cordova-bg.jpg">
@@ -235,18 +289,43 @@
 						<li>Full native support for Windows, Android, iOS</li>
 						<li>Share and reuse code across platforms in one solution</li>
 						<li>State-of-the-art code editing, powerful debugging, fast emulation</li>
-						<li>Build and debug for Windows, Android, iOS (using bridge)</li>
+						<li>Build, debug and profile for Windows, Android, iOS</li>
 					</ul>
 					<img src="assets/vs-native.png">
+
+					<!-- Notes -->
+					<aside class="notes">
+						<ol>
+							<li>We integrated the Android NDK (Native-Activity application) into VS, including the same toolchain you'd use with Android Studio to build native apps. (Clang/GCC)</li>
+							<li>Android Code Editing (Refactoring, Intellisense)</li>
+							<li>Android Native Debugger, Logcat Viewer</li>
+						</ol>
+					</aside>
 				</section>
 
 				<section data-background="assets/patternbg2.png" data-background-size="700px" data-background-repeat="repeat">
 					<h1>Demo</h1>
 					<h2>C++ App Development</h2>
+
+					<!-- Notes -->
+					<aside class="notes">
+						<ol>
+							<li>Bitmap Plasma</li>
+						</ol>
+					</aside>
 				</section>
 
 				<section class="inverse" data-background="assets/alljoyn-bg.jpg">
 					<img class="noborder" src="assets/xamarin.png">
+
+					<!-- Notes -->
+					<aside class="notes">
+						<ol>
+							<li>Native development is without a doubt the way to deliver the best possible performance on devices.</li>
+							<li>The only native language all devices share is C++. Working in C++ is kind of hard.</li>
+							<li>That's where Xamarin comes in: The company makes a lot of money by providing *amazing* cross-platform tools which compile C# code into native iOS, Android and Windows apps.</li>
+						</ol>
+					</aside>
 				</section>
 
 				<section class="inverse">
@@ -268,6 +347,16 @@
 							<img src="assets/xamarin-flow.png" class="noborder" />
 						</div>
 					</div>
+
+					<!-- Notes -->
+					<aside class="notes">
+						<ol>
+							<li>How does Xamarin work? Two products: Xamarin.iOS and Xamarin.Android. Mono.</li>
+							<li>iOS: Ahead-of-Time compilation of .NET C# code directly to native ARM assembly code.</li>
+							<li>Android: Compiles .NET C# down to Intermediate Language (IL), which is then Just-in-Time (JIT) compiled to a native assembly when the app launches (aka the Android way).</li>
+							<li>Xamarin does not only compile C# down to Android and iOS, but it also exposes the full API to C# (in Namespaces). The idea is not to write one app that runs everywhere, but to have one toolchain with a common language to maximize reuse. The resulting apps and their controls are native.</li>
+						</ol>
+					</aside>
 				</section>
 
 				<section data-background="assets/patternbg2.png" data-background-size="700px" data-background-repeat="repeat">
@@ -277,12 +366,27 @@
 
 				<section class="inverse" data-background="assets/alljoyn-bg.jpg">
 					<img class="noborder" src="assets/cordova.png">
+
+					<!-- Notes -->
+					<aside class="notes">
+						<ol>
+							<li>At this point, most people have probably heard of Cordova. If you haven't it's an Apache project aiming to bridge native device features (like notifications or the camera) over to JavaScript, so that browser-based apps can use native features.</li>
+							<li>Ahead of it's time, worth a second look. JS: A lot has happened. React.</li>
+						</ol>
+					</aside>
 				</section>
 
 				<section class="inverse">
 					<h2>Who's using Cordova?</h2>
 					<img src="assets/cordova-users1.png">
 					<img src="assets/cordova-users2.png">
+
+					<!-- Notes -->
+					<aside class="notes">
+						<ol>
+							<li>It's for that reason that some of the users of Cordova might be surprising: The BBC used it exclusively for their Olympics coverage, while Salesforce is currently working on a new set of apps.</li>
+						</ol>
+					</aside>
 				</section>
 
 				<section class="inverse" data-background="assets/cordova-bg.jpg">
@@ -306,6 +410,14 @@
 							<img src="assets/cordova-flow.png" width="400px" class="noborder" />
 						</div>
 					</div>
+
+					<!-- Notes -->
+					<aside class="notes">
+						<ol>
+							<li>There were a few things we could do to make Cordova itself better, and we did. We're actually contributing to it quite heavily.</li>
+							<li>At the same time, we wanted to optimize the tooling: Dependencies, added TypeScript support, and just in general a workflow fit for app development.</li>
+						</ol>
+					</aside>
 				</section>
 
 				<section data-background="assets/patternbg2.png" data-background-size="700px" data-background-repeat="repeat">
@@ -313,9 +425,24 @@
 					<h2>Apache Cordova App Development</h2>
 				</section>
 
+				<section data-background="assets/astoria-bg.jpg">
+					<h1>Project Astoria</h1>
+					<h3>It's kind of crazy<br />It's not done yet<br />Don't wait for it</h3>
+
+					<!-- Notes -->
+					<aside class="notes">
+						<ol>
+							<li>I arrived yesterday and the local team told me "Man, you'll get a gazillion questions around Project Astoria"</li>
+							<li>For those who have no idea what I'm talking about, we're currently working on a bridge allowing devs to take most of their Java Android apps to Windows 10 Phones and Tablets</li>
+							<li>Not ready yet, please don't wait for it</li>
+						</ol>
+					</aside>
+				</section>
+
 				<section>
 					<h2>Come Say Hi!</h2>
-					<h4><a href="http://aka.ms/vsxplat">http://aka.ms/vsxplat</a></h4>
+					<h1>Friday @ 11am, Truck</h1>
+					<h2>http://aka.ms/vsxplat</h2>
 
 					<div class="gravatar">
 						<img alt src="assets/felix.jpeg" class="gravatar">
@@ -324,7 +451,7 @@
 						<a href="http://github.com/felixrieseberg"><i class="fa fa-github"></i></a>
 						<a href="http://www.twitter.com/felixrieseberg"><i class="fa fa-twitter"></i></a>
 						<a href="mailto:feriese@microsoft.com"><i class="fa fa-envelope-o"></i></a>
-						Felix Rieseberg
+						<br />Felix Rieseberg
 					</p>					
 				</section>
 			</div>
