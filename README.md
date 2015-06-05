@@ -1,5 +1,5 @@
 # Cross-Platform Development with Visual Studio 2015
-This is a presentation given at Droidcon 2015, describing the current cross-platform development strategies using Visual Studio 2015. Three main areas are discussed: Native development with C++, C# with Xamarin, and HTML/JavaScript with Apache Cordova.
+This is a presentation given at Droidcon 2015, describing the current cross-platform development strategies using Visual Studio 2015. Three main areas are discussed: Native development with C++, C# with Xamarin, and HTML/JavaScript with Apache Cordova. All the features available in the discussion are available for free as part of the [Visual Studio Community Edition](https://www.visualstudio.com/en-us/products/vs-2015-product-editions.aspx).
 
 You can see [the presentation here](http://felixrieseberg.github.io/VS-Cross-Platform-Development). Navigate through the slides by either using the arrows in the lower right or by using the arrow keys on your keyboard.
 
